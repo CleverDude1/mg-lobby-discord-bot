@@ -22,13 +22,13 @@ async function fetchChat() {
 
     if (!data || !Array.isArray(data)) return;
 
-    for (const msg of data) {
-      if (msg.id > lastId) {
-        lastId = msg.id;
+ for (const msg of data) {
+  if (msg.timestamp > lastTimestamp) {
+    lastTimestamp = msg.timestamp;
+    await sendToDiscord(msg);
+  }
+}
 
-        await sendToDiscord(msg);
-      }
-    }
 
     console.log("Checked chat. Last ID:", lastId);
 
