@@ -1,5 +1,4 @@
-// index.js
-import fetch from "node-fetch";
+
 
 // ===== CONFIG =====
 const API_URL = "https://martiangames.com/api/lobbychat";
