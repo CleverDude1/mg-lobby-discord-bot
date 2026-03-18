@@ -4,7 +4,8 @@ const API_URL = "https://martiangames.com/api/lobbychat";
 const TOKEN = process.env.API_TOKEN;
 const WEBHOOK = process.env.DISCORD_WEBHOOK;
 
-let lastId = 0;
+let lastTimestamp = 0;
+
 
 async function fetchChat() {
   try {
