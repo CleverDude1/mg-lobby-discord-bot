@@ -1,8 +1,24 @@
 {
   "name": "mg-chat-bot",
   "version": "1.0.0",
+  "description": "A bot to relay MotorWars2 lobby chat to Discord",
+  "type": "module",
   "main": "index.js",
   "scripts": {
     "start": "node index.js"
-  }
+  },
+  "engines": {
+    "node": ">=22.0.0"
+  },
+  "dependencies": {
+    "dotenv": "^16.3.1"
+  },
+  "keywords": [
+    "discord",
+    "bot",
+    "MotorWars2",
+    "chat"
+  ],
+  "author": "CleverDude1",
+  "license": "MIT"
 }
